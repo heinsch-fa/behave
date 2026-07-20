@@ -182,9 +182,11 @@ void ContainAdapter::doContainRun()
         containSim.run();
 
         // Store Values from ContainSim For Access in SIGContainAdapter
-        m_size       = containSim.firePoints();
-        m_x          = containSim.firePerimeterX();
-        m_y          = containSim.firePerimeterY();
+        m_size   = containSim.firePoints();
+        m_xData  = std::vector<double>(containSim.firePerimeterX(), containSim.firePerimeterX() + m_size);
+        m_yData  = std::vector<double>(containSim.firePerimeterY(), containSim.firePerimeterY() + m_size);
+        m_x      = m_xData.data();
+        m_y      = m_yData.data();
         m_reportHead = containSim.fireHeadAtReport();
         m_reportBack = containSim.fireBackAtReport();
         m_attackHead = containSim.fireHeadAtAttack();
