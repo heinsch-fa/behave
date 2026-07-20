@@ -37,6 +37,7 @@
 #include "fireSize.h"
 
 #include <string>
+#include <vector>
 
 //------------------------------------------------------------------------------
 /*! \enum ContainTactic
@@ -175,6 +176,8 @@ protected:
     double* m_x;          //!< Array of perimeter x coordinates (ch)
     double* m_y;          //!< Array of perimeter y coordinates (ch)
     int m_size;           //!< Size of the m_x and m_y arrays
+    std::vector<double> m_xData;  //!< Owned copy of perimeter x coordinates
+    std::vector<double> m_yData;  //!< Owned copy of perimeter y coordinates
     double m_reportHead;  //!< Fire head position at report time (ch)
     double m_reportBack;  //!< Fire back position at report time (ch)
     double m_attackHead;  //!< Fire head position at first attack (ch)
