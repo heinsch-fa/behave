@@ -334,13 +334,13 @@ void FuelModels::populateFuelModels()
     setFuelModelRecord(110, "V-Hb",
         "Short Grass,  < 0.5 m (Dynamic)",
         1.14828, 24, 8162.229, 8162.229,
-        0.133827*f, 0, 0, 0.535308*f, 0, 
+        0.133827*f, 0, 0, 0.535308*f, 0,
         1828.8, 1828.8, 1828.8,
         true, true);
     setFuelModelRecord(111, "V-Ha",
-        "Tall Grass,  > 0.5 m (Dynamic)",
+        "Tall Grass, > 0.5 m (Dynamic)",
         1.96848, 24, 8162.229, 8162.229,
-        0.223045*f, 0.044609*f, 0, 1.115225*f, 0.133827*f, 
+        0.223045*f, 0.044609*f, 0, 1.115225*f, 0.133827*f,
         1219.2, 1828.8, 1219.2,
         true, true);
 
@@ -474,31 +474,31 @@ void FuelModels::populateFuelModels()
     setFuelModelRecord(155, "V-MH",
         "Short Green Shrub < 1 m With Grass, Discontinuous (< 1 m) often discontinuous and with grass (Dynamic)",
         1.80444, 25, 8377.0245, 8377.0245,
-        0.44609*f, 0.44609*f, 0, 0.669135*f, 2.453495*f, 
+        0.44609*f, 0.44609*f, 0, 0.669135*f, 2.453495*f,
         1371.6, 2590.8, 1219.2,
         true, true);
     setFuelModelRecord(156, "V-MMb",
         "Short Shrub < 1 m, Low Dead Fraction and/or Thick Foliage (Static)",
         2.95272, 20, 8806.6155, 8806.6155,
-        1.78436*f, 0.223045*f, 0, 0, 3.12263*f, 
+        1.78436*f, 0.223045*f, 0, 0, 3.12263*f,
         914.4, 914.4, 914.4,
         false, true);
     setFuelModelRecord(157, "V-MAb",
         "Short Shrub < 1 m, High Dead Fraction and/or Thin Fuel (Static)",
         1.6404, 35, 9021.411, 9021.411,
-        2.67654*f, 0.223045*f, 0, 0, 3.345675*f, 
+        2.67654*f, 0.223045*f, 0, 0, 3.345675*f,
         1371.6, 1371.6, 1371.6,
         false, true);
     setFuelModelRecord(158, "V-MMa",
         "Tall Shrub > 1 m, Low Dead Fraction and/or Thick Foliage (Static)",
         5.57736, 24, 8806.6155, 8806.6155,
-        2.67654*f, 1.78436*f, 0, 0, 5.79917*f, 
+        2.67654*f, 1.78436*f, 0, 0, 5.79917*f,
         762, 914.4, 914.4,
         false, true);
     setFuelModelRecord(159, "V-MAa",
         "Tall Shrub > 1 m, High Dead Fraction and/or Thin Fuel (Static)",
         3.44484, 35, 9021.411, 9021.411,
-        4.237855*f, 1.115225*f, 0, 0, 6.468305*f, 
+        4.237855*f, 1.115225*f, 0, 0, 6.468305*f,
         1066.8, 1219.2, 1219.2,
         false, true);
 
@@ -535,45 +535,45 @@ void FuelModels::populateFuelModels()
         1500, 1800, 750,
         false, true);
     setFuelModelRecord(166, "M-EUCd",
-        "Discontinuous Litter Eucalyptus Plantation, With or Without Shrub Understory  (Static)",
+        "Discontinuous Litter Eucalyptus Plantation, With or Without Shrub Understory (Static)",
         1.31232, 26, 9021.411, 8806.6155,
-        0.6111433*f, 1.2892001*f, 0.7092831*f, 0, 0.8208056*f, 
+        0.6111433*f, 1.2892001*f, 0.7092831*f, 0, 0.8208056*f,
         1371.6, 1280.16, 1524,
         false, true);
     setFuelModelRecord(167, "M-H",
         "Deciduous or Conifer Litter, Shrub and Herb Understory",
         0.32808, 30, 8806.6155, 8806.6155,
-        1.2089039*f, 0.44609*f, 0, 0.2944194*f, 0.044609*f, 
+        1.2089039*f, 0.44609*f, 0, 0.2944194*f, 0.044609*f,
         1676.4, 2438.4, 1371.6,
         true,true);
     setFuelModelRecord(168, "M-F",
         "Deciduous or Conifer Litter, Shrub and Fern Understory (Dynamic)",
         0.98424, 35, 8377.0245, 8377.0245,
-        2.007405*f, 0.669135*f, 0.223045*f, 1.0483115*f, 0.2141232*f, 
+        2.007405*f, 0.669135*f, 0.223045*f, 1.0483115*f, 0.2141232*f,
         1828.8, 2438.4, 1371.6,
         true, true);
     setFuelModelRecord(169, "M-CAD",
         "Deciduous Litter, Shrub Understory (Static)",
         2.066904, 30, 8591.82, 8591.82,
-        2.0252486*f, 0.8341883*f, 0.2721149*f, 0, 4.0504972*f, 
+        2.0252486*f, 0.8341883*f, 0.2721149*f, 0, 4.0504972*f,
         1828.8, 1499.9208, 1524,
         false, true);
     setFuelModelRecord(170, "M-ESC",
         "Sclerophyll Broadleaf Litter, Shrub Understory (Static)",
         1.6404, 27, 8806.6155, 8806.6155,
-        2.5204085*f, 0.669135*f, 0.2141232*f, 0, 3.5196501*f, 
+        2.5204085*f, 0.669135*f, 0.2141232*f, 0, 3.5196501*f,
         1524, 1499.9208, 1676.4,
         false, true);
     setFuelModelRecord(171, "M-PIN",
         "Medium-Long Needle Pine Litter, Shrub Understory (Static)",
         1.6404, 40, 8806.6155, 9236.2065,
-        3.2163089*f, 1.33827*f, 0, 0, 3.0735601*f, 
+        3.2163089*f, 1.33827*f, 0, 0, 3.0735601*f,
         1676.4, 1676.4, 1828.8,
         false, true);
     setFuelModelRecord(172, "M-EUC",
         "Eucalyptus Litter, Shrub Understory (Static)",
         2.099712, 32, 9021.411, 9021.411,
-        3.7337733*f, 1.6996029*f, 0, 0, 2.0118659*f, 
+        3.7337733*f, 1.6996029*f, 0, 0, 2.0118659*f,
         1432.56, 1280.16, 1524,
         false, true);
 
@@ -638,25 +638,25 @@ void FuelModels::populateFuelModels()
     setFuelModelRecord(190, "F-RAC",
         "Very Compact Litter, Short Needle Conifers (Static)",
         0.16404, 28, 8806.6155, 8806.6155,
-        1.6728375*f, 0.89218*f, 0.44609*f, 0, 0.5263862*f, 
+        1.6728375*f, 0.89218*f, 0.44609*f, 0, 0.5263862*f,
         1981.2, 1499.9208, 1371.6,
         false, true);
     setFuelModelRecord(191, "F-FOL",
         "Compact Litter, Deciduous or Evergreen Foliage (Static)",
         0.49212, 25, 8806.6155, 8806.6155,
-        1.1910603*f, 0.5665343*f, 0.3078021*f, 0, 0.5174644*f, 
+        1.1910603*f, 0.5665343*f, 0.3078021*f, 0, 0.5174644*f,
         1371.6, 1676.4, 1524,
         false, true);
     setFuelModelRecord(192, "F-PIN",
         "Litter from Medium-Long Needle Pine Trees (Static)",
         0.32808, 45, 8806.6155, 9236.2065,
-        2.899585*f, 0.669135*f, 0, 0, 0, 
+        2.899585*f, 0.669135*f, 0, 0, 0,
         1676.4, 1676.4, 1676.4,
         false, true);
     setFuelModelRecord(193, "F-EUC",
         "Pure Eucalyptus Litter, No Understory (Static)",
         1.049856, 26, 9021.411, 8806.6155,
-        2.0653967*f, 1.3204264*f, 0.5665343*f, 0, 0.4996208*f, 
+        2.0653967*f, 1.3204264*f, 0.5665343*f, 0, 0.4996208*f,
         1280.16, 1280.16, 1524,
         false, true);
 
