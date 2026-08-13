@@ -545,14 +545,13 @@ void FuelModels::populateFuelModels()
         0.32808, 30, 8806.6155, 8806.6155,
         1.2089039*f, 0.44609*f, 0, 0.2944194*f, 0.044609*f, 
         1676.4, 2438.4, 1371.6,
-        true,true
+        true,true);
     setFuelModelRecord(168, "M-F",
         "Deciduous or Conifer Litter, Shrub and Fern Understory (Dynamic)",
         0.98424, 35, 8377.0245, 8377.0245,
         2.007405*f, 0.669135*f, 0.223045*f, 1.0483115*f, 0.2141232*f, 
         1828.8, 2438.4, 1371.6,
         true, true);
-    setFuelModelRecord(169, "M-CAD",
     setFuelModelRecord(169, "M-CAD",
         "Deciduous Litter, Shrub Understory (Static)",
         2.066904, 30, 8591.82, 8591.82,
