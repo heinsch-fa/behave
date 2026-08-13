@@ -52,6 +52,7 @@ void testFineDeadFuelMoistureTool(TestInfo& testInfo, BehaveRun& behaveRun);
 void testSlopeTool(TestInfo& testInfo, BehaveRun& behaveRun);
 void testVaporPressureDeficitCalculator(TestInfo& testInfo, BehaveRun& behaveRun);
 void testSimpleSurface(TestInfo& testInfo, BehaveRun& behaveRun);
+void testFuelModelDynamicFlags(TestInfo& testInfo, FuelModels& fuelModels);
 
 int main()
 {
@@ -86,6 +87,7 @@ int main()
     testSlopeTool(testInfo, behaveRun);
     testVaporPressureDeficitCalculator(testInfo, behaveRun);
     testSimpleSurface(testInfo, behaveRun);
+    testFuelModelDynamicFlags(testInfo, fuelModels);
 
     std::cout << "Total tests performed: " << testInfo.numTotalTests << "\n";
     if(testInfo.numPassed > 0)
@@ -1998,4 +2000,37 @@ void testSimpleSurface(TestInfo& testInfo, BehaveRun& behaveRun)
     expectedRateofSpread = 2292.684759;
     observedRateofSpread = roundToSixDecimalPlaces(behaveRun.surface.getFirelineIntensity(FirelineIntensityUnits::BtusPerFootPerSecond));
     reportTestResult(testInfo, testName, observedRateofSpread, expectedRateofSpread, error_tolerance);
+}
+
+void testFuelModelDynamicFlags(TestInfo& testInfo, FuelModels& fuelModels)
+{
+    // Scott & Burgan (2005) standard fuel models. A model is "dynamic" exactly
+    // when it carries a transferable live herbaceous load, so for every standard
+    // model the following invariant must hold:
+    //     getIsDynamic(n) == (getFuelLoadLiveHerbaceous(n) > 0)
+    // The extended SCAL / V- / M- / F- models are intentionally excluded here:
+    // their static/dynamic designation does not follow this rule.
+    const int standardFuelModelNumbers[] = {
+        101, 102, 103, 104, 105, 106, 107, 108, 109, // GR1-GR9
+        121, 122, 123, 124,                           // GS1-GS4
+        141, 142, 143, 144, 145, 146, 147, 148, 149, // SH1-SH9
+        161, 162, 163, 164, 165,                      // TU1-TU5
+        181, 182, 183, 184, 185, 186, 187, 188, 189, // TL1-TL9
+        201, 202, 203, 204 };                         // SB1-SB4
+    const int numberOfStandardFuelModels =
+        sizeof(standardFuelModelNumbers) / sizeof(standardFuelModelNumbers[0]);
+
+    for(int i = 0; i < numberOfStandardFuelModels; i++)
+    {
+        const int fuelModelNumber = standardFuelModelNumbers[i];
+        const double liveHerbaceousLoad =
+            fuelModels.getFuelLoadLiveHerbaceous(fuelModelNumber, LoadingUnits::PoundsPerSquareFoot);
+        const bool observedIsDynamic = fuelModels.getIsDynamic(fuelModelNumber);
+        const bool expectedIsDynamic = (liveHerbaceousLoad > 0.0);
+
+        const string testName = "Test isDynamic flag for standard fuel model "
+            + fuelModels.getFuelCode(fuelModelNumber)
+            + " (" + std::to_string(fuelModelNumber) + ")";
+        reportTestResult(testInfo, testName, (double)observedIsDynamic, (double)expectedIsDynamic, error_tolerance);
+    }
 }

@@ -59,7 +59,7 @@ var searchData=
   ['m_5flatcombarray_56',['m_latCombArray',['../classExtension.html#a310d3d9db425ff314fabf210799c0f6a',1,'Extension']]],
   ['m_5flatprob_57',['m_latProb',['../classExtension.html#a11a5375acc4a2de6a98d26f06078e96d',1,'Extension']]],
   ['m_5flatros_58',['m_latRos',['../classRandThread.html#a0328e19cd6df3c6136f7e20222401da5',1,'RandThread']]],
-  ['m_5flatrosarray_59',['m_latrosarray',['../classRandThread.html#a5cc70471b4be5c386a1121b9668e1519',1,'RandThread::m_latRosArray'],['../classExtension.html#a9d43a26de9994fbf042ff7fabe9f6de5',1,'Extension::m_latRosArray']]],
+  ['m_5flatrosarray_59',['m_latrosarray',['../classExtension.html#a9d43a26de9994fbf042ff7fabe9f6de5',1,'Extension::m_latRosArray'],['../classRandThread.html#a5cc70471b4be5c386a1121b9668e1519',1,'RandThread::m_latRosArray']]],
   ['m_5flbratio_60',['m_lbratio',['../classRandFuel.html#a5adb1d7710588f859262ceaf19998929',1,'RandFuel::m_lbRatio'],['../classRandThread.html#a45271cc474a8742428a21cf41d5cfdde',1,'RandThread::m_lbRatio']]],
   ['m_5fleefuels_61',['m_leeFuels',['../classExtension.html#a547781f38700422cf78a8ccf8266070a',1,'Extension']]],
   ['m_5fleft_62',['m_left',['../classSem_1_1ContainSim.html#afc4dbb2e04a57dd4dd01d4da7ff1dc94',1,'Sem::ContainSim']]],
@@ -88,7 +88,7 @@ var searchData=
   ['m_5frf_85',['m_rf',['../classExtension.html#af30525329307dc9e1ac8e8feb14245d4',1,'Extension']]],
   ['m_5fright_86',['m_right',['../classSem_1_1ContainSim.html#ac1116507abbfff2c74edf2a56f5d015f',1,'Sem::ContainSim']]],
   ['m_5frkpr_87',['m_rkpr',['../classSem_1_1Contain.html#aec95193bdc698585548e50595a3a79fb',1,'Sem::Contain']]],
-  ['m_5frosarray_88',['m_rosarray',['../classExtension.html#a906f0f8d729a3332e2dc057a3158747f',1,'Extension::m_rosArray'],['../classRandFuel.html#a279ddf52059cfc960f2f87ff28f2a567',1,'RandFuel::m_rosArray'],['../classRandThread.html#a0285f30d0914eaa9436a17bb3d6308e9',1,'RandThread::m_rosArray']]],
+  ['m_5frosarray_88',['m_rosarray',['../classExtension.html#a906f0f8d729a3332e2dc057a3158747f',1,'Extension::m_rosArray'],['../classRandThread.html#a0285f30d0914eaa9436a17bb3d6308e9',1,'RandThread::m_rosArray'],['../classRandFuel.html#a279ddf52059cfc960f2f87ff28f2a567',1,'RandFuel::m_rosArray']]],
   ['m_5frosextarray_89',['m_rosExtArray',['../classRandFuel.html#ad641a961f46dd26ce905bde5c93fb200',1,'RandFuel']]],
   ['m_5frows_90',['m_rows',['../classExtension.html#ac4e5bc308e8371e829e1425d22f688a0',1,'Extension']]],
   ['m_5fsamples_91',['m_samples',['../classRandFuel.html#a28605ae7bdb5da990c5e626655926679',1,'RandFuel::m_samples'],['../classRandThread.html#af2e3c310c89f12f24f931399f8c86e8f',1,'RandThread::m_samples']]],
@@ -105,8 +105,10 @@ var searchData=
   ['m_5fu0_102',['m_u0',['../classSem_1_1Contain.html#a143cb94b2072802dc628f16e12cebc21',1,'Sem::Contain']]],
   ['m_5fused_103',['m_used',['../classSem_1_1ContainSim.html#aec236d6e7ebbe17afba88edceb92bc52',1,'Sem::ContainSim']]],
   ['m_5fx_104',['m_x',['../classSem_1_1Contain.html#a8691dbe769578dba20fd4f490849f9be',1,'Sem::Contain::m_x'],['../classContainAdapter.html#a7edbb3305402fa6f22c91a5c869e3782',1,'ContainAdapter::m_x'],['../classSem_1_1ContainSim.html#a12eb44c04fa8d4de495413cc3960acb1',1,'Sem::ContainSim::m_x']]],
-  ['m_5fxmax_105',['m_xMax',['../classSem_1_1ContainSim.html#a2e62f0f3474e5bd16a938683917cffbc',1,'Sem::ContainSim']]],
-  ['m_5fxmin_106',['m_xMin',['../classSem_1_1ContainSim.html#a645ef45ba4d6de9a739d270f5eb0847f',1,'Sem::ContainSim']]],
-  ['m_5fy_107',['m_y',['../classSem_1_1Contain.html#ae8ef60f99f9408c2259f39f6a1421150',1,'Sem::Contain::m_y'],['../classContainAdapter.html#ac30cee87d6bf798f15c8065cf0c27644',1,'ContainAdapter::m_y'],['../classSem_1_1ContainSim.html#a3d238966ac9e8bdfff562d7b6b2b6eb5',1,'Sem::ContainSim::m_y']]],
-  ['m_5fymax_108',['m_yMax',['../classSem_1_1ContainSim.html#aa11a6d1e62e66a310fab1883327bb1f7',1,'Sem::ContainSim']]]
+  ['m_5fxdata_105',['m_xData',['../classContainAdapter.html#aba4219be7031fe17f7d378d79631a98c',1,'ContainAdapter']]],
+  ['m_5fxmax_106',['m_xMax',['../classSem_1_1ContainSim.html#a2e62f0f3474e5bd16a938683917cffbc',1,'Sem::ContainSim']]],
+  ['m_5fxmin_107',['m_xMin',['../classSem_1_1ContainSim.html#a645ef45ba4d6de9a739d270f5eb0847f',1,'Sem::ContainSim']]],
+  ['m_5fy_108',['m_y',['../classSem_1_1Contain.html#ae8ef60f99f9408c2259f39f6a1421150',1,'Sem::Contain::m_y'],['../classContainAdapter.html#ac30cee87d6bf798f15c8065cf0c27644',1,'ContainAdapter::m_y'],['../classSem_1_1ContainSim.html#a3d238966ac9e8bdfff562d7b6b2b6eb5',1,'Sem::ContainSim::m_y']]],
+  ['m_5fydata_109',['m_yData',['../classContainAdapter.html#a7c8e3a1dc706291ce011e4e946bd2a3f',1,'ContainAdapter']]],
+  ['m_5fymax_110',['m_yMax',['../classSem_1_1ContainSim.html#aa11a6d1e62e66a310fab1883327bb1f7',1,'Sem::ContainSim']]]
 ];

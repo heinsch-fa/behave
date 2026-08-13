@@ -395,43 +395,43 @@ void FuelModels::populateFuelModels()
         1.0, 0.15, 8000, 8000,
         1.35*f, 2.4*f, 0.75*f, 0, 3.85*f,
         2000, 1800, 1600,
-        true, true);
+        false, true);
     setFuelModelRecord(143, "SH3",
         "Moderate load, humid climate shrub (S)",
         2.4, 0.40, 8000., 8000.,
         0.45*f, 3.0*f, 0, 0, 6.2*f,
         1600, 1800, 1400,
-        true, true);
+        false, true);
     setFuelModelRecord(144, "SH4",
         "Low load, humid climate timber-shrub (S)",
         3.0, 0.30, 8000, 8000,
         0.85*f, 1.15*f, 0.2*f, 0, 2.55*f,
         2000, 1800, 1600,
-        true, true);
+        false, true);
     setFuelModelRecord(145, "SH5",
         "High load, dry climate shrub (S)",
         6.0, 0.15, 8000, 8000,
         3.6*f, 2.1*f, 0, 0, 2.9*f,
         750, 1800, 1600,
-        true, true);
+        false, true);
     setFuelModelRecord(146, "SH6",
         "Low load, humid climate shrub (S)",
         2.0, 0.30, 8000, 8000,
         2.9*f, 1.45*f, 0, 0, 1.4*f,
         750, 1800, 1600,
-        true, true);
+        false, true);
     setFuelModelRecord(147, "SH7",
         "Very high load, dry climate shrub (S)",
         6.0, 0.15, 8000, 8000,
         3.5*f, 5.3*f, 2.2*f, 0, 3.4*f,
         750, 1800, 1600,
-        true, true);
+        false, true);
     setFuelModelRecord(148, "SH8",
         "High load, humid climate shrub (S)",
         3.0, 0.40, 8000, 8000,
         2.05*f, 3.4*f, 0.85*f, 0, 4.35*f,
         750, 1800, 1600,
-        true, true);
+        false, true);
     setFuelModelRecord(149, "SH9",
         "Very high load, humid climate shrub (D)",
         4.4, 0.40, 8000, 8000,
@@ -515,7 +515,7 @@ void FuelModels::populateFuelModels()
         1.0, 0.30, 8000, 8000,
         0.95*f, 1.8*f, 1.25*f, 0, 0.2*f,
         2000, 1800, 1600,
-        true, true);
+        false, true);
     setFuelModelRecord(163, "TU3",
         "Moderate load, humid climate timber-grass-shrub (D)",
         1.3, 0.30, 8000, 8000,
@@ -527,13 +527,13 @@ void FuelModels::populateFuelModels()
         0.5, 0.12, 8000, 8000,
         4.5*f, 0, 0, 0, 2.0*f,
         2300, 1800, 2000,
-        true, true);
+        false, true);
     setFuelModelRecord(165, "TU5",
         "Very high load, dry climate timber-shrub (S)",
         1.0, 0.25, 8000, 8000,
         4.0*f, 4.0*f, 3.0*f, 0, 3.0*f,
         1500, 1800, 750,
-        true, true);
+        false, true);
     setFuelModelRecord(166, "M-EUCd",
         "Discontinuous Litter Eucalyptus Plantation, With or Without Shrub Understory  (Static)",
         1.31232, 26, 9021.411, 8806.6155,
@@ -586,55 +586,55 @@ void FuelModels::populateFuelModels()
         0.2, 0.30, 8000, 8000,
         1.0*f, 2.2*f, 3.6*f, 0, 0,
         2000, 1800, 1600,
-        true, true);
+        false, true);
     setFuelModelRecord(182, "TL2",
         "Low load broadleaf litter (S)",
         0.2, 0.25, 8000, 8000,
         1.4*f, 2.3*f, 2.2*f, 0, 0,
         2000, 1800, 1600,
-        true, true);
+        false, true);
     setFuelModelRecord(183, "TL3",
         "Moderate load conifer litter (S)",
         0.3, 0.20, 8000, 8000,
         0.5*f, 2.2*f, 2.8*f, 0, 0,
         2000, 1800, 1600,
-        true, true);
+        false, true);
     setFuelModelRecord(184, "TL4",
         "Small downed logs (S)",
         0.4, 0.25, 8000, 8000,
         0.5*f, 1.5*f, 4.2*f, 0, 0,
         2000, 1800, 1600,
-        true, true);
+        false, true);
     setFuelModelRecord(185, "TL5",
         "High load conifer litter (S)",
         0.6, 0.25, 8000, 8000,
         1.15*f, 2.5*f, 4.4*f, 0, 0,
         2000, 1800, 160,
-        true, true);
+        false, true);
     setFuelModelRecord(186, "TL6",
         "High load broadleaf litter (S)",
         0.3, 0.25, 8000, 8000,
         2.4*f, 1.2*f, 1.2*f, 0, 0,
         2000, 1800, 1600,
-        true, true);
+        false, true);
     setFuelModelRecord(187, "TL7",
         "Large downed logs (S)",
         0.4, 0.25, 8000, 8000,
         0.3*f, 1.4*f, 8.1*f, 0, 0,
         2000, 1800, 1600,
-        true, true);
+        false, true);
     setFuelModelRecord(188, "TL8",
         "Long-needle litter (S)",
         0.3, 0.35, 8000, 8000,
         5.8*f, 1.4*f, 1.1*f, 0, 0,
         1800, 1800, 1600,
-        true, true);
+        false, true);
     setFuelModelRecord(189, "TL9",
         "Very high load broadleaf litter (S)",
         0.6, 0.35, 8000, 8000,
         6.65*f, 3.30*f, 4.15*f, 0, 0,
         1800, 1800, 1600,
-        true, true);
+        false, true);
     setFuelModelRecord(190, "F-RAC",
         "Very Compact Litter, Short Needle Conifers (Static)",
         0.16404, 28, 8806.6155, 8806.6155,
@@ -669,25 +669,25 @@ void FuelModels::populateFuelModels()
         1.0, 0.25, 8000, 8000,
         1.5*f, 3.0*f, 11.0*f, 0, 0,
         2000, 1800, 1600,
-        true, true);
+        false, true);
     setFuelModelRecord(202, "SB2",
         "Moderate load activity or low load blowdown (S)",
         1.0, 0.25, 8000, 8000,
         4.5*f, 4.25*f, 4.0*f, 0, 0,
         2000, 1800, 1600,
-        true, true);
+        false, true);
     setFuelModelRecord(203, "SB3",
         "High load activity fuel or moderate load blowdown (S)",
         1.2, 0.25, 8000, 8000,
         5.5*f, 2.75*f, 3.0*f, 0, 0,
         2000, 1800, 1600,
-        true, true);
+        false, true);
     setFuelModelRecord(204, "SB4",
         "High load blowdown (S)",
         2.7, 0.25, 8000, 8000,
         5.25*f, 3.5*f, 5.25*f, 0, 0,
         2000, 1800, 1600,
-        true, true);
+        false, true);
     // 205-210 reserved for future slash and blowdown models
     for (int i = 205; i <= 210; i++)
     {
