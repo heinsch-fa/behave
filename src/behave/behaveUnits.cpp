@@ -156,6 +156,7 @@ double SpeedUnits::toBaseUnits(double value, SpeedUnits::SpeedUnitsEnum units)
     const double CHAINS_PER_HOUR_TO_FEET_PER_MINUTE = 1.1;
     const double MILES_PER_HOUR_TO_FEET_PER_MINUTE = 88;
     const double KILOMETERS_PER_HOUR_TO_FEET_PER_MINUTE = 54.680665;
+    const double FURLONGS_PER_FORTNIGHT_TO_FEET_PER_MINUTE = 660.0 / 20160.0;
 
     switch (units)
     {
@@ -194,6 +195,11 @@ double SpeedUnits::toBaseUnits(double value, SpeedUnits::SpeedUnitsEnum units)
             value *= KILOMETERS_PER_HOUR_TO_FEET_PER_MINUTE;
             break;
         }
+        case FurlongsPerFortnight:
+        {
+            value *= FURLONGS_PER_FORTNIGHT_TO_FEET_PER_MINUTE;
+            break;
+        }
         default:
         {
             ; // TODO: Handle error
@@ -212,6 +218,7 @@ double SpeedUnits::fromBaseUnits(double value, SpeedUnits::SpeedUnitsEnum units)
     const double FEET_PER_MINUTE_TO_CHAINS_PER_HOUR = 10.0 / 11.0;
     const double FEET_PER_MINUTE_TO_MILES_PER_HOUR = 0.01136363636;
     const double FEET_PER_MINUTE_TO_KILOMETERS_PER_HOUR = 0.018288;
+    const double FEET_PER_MINUTE_TO_FURLONGS_PER_FORTNIGHT = 20160.0 / 660.0;
 
     switch (units)
     {
@@ -248,6 +255,11 @@ double SpeedUnits::fromBaseUnits(double value, SpeedUnits::SpeedUnitsEnum units)
         case KilometersPerHour:
         {
             value *= FEET_PER_MINUTE_TO_KILOMETERS_PER_HOUR;
+            break;
+        }
+        case FurlongsPerFortnight:
+        {
+            value *= FEET_PER_MINUTE_TO_FURLONGS_PER_FORTNIGHT;
             break;
         }
         default:
